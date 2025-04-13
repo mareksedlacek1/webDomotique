@@ -47,7 +47,26 @@ Sous Linux, pour créer la base de données, ouvrez le terminal, connectez-vous 
 mysql -u root -p
 source /home/cytech/web6/frontend/sql/tables.sql
 
-4. Découvrir les fonctionnalités de l'application
+4. Configurer la connexion à la base de données
+
+Avant de lancer l'application, vous devez configurer la connexion à la base de données dans le fichier dbconfig.php. Ouvrez le fichier dbconfig.php situé dans le répertoire backend et modifiez les informations de connexion selon vos paramètres MySQL :
+
+    $servername : Si votre base de données est sur un autre serveur, changez localhost par l'adresse de ce serveur.
+
+    $username : Remplacez root par votre nom d'utilisateur MySQL.
+
+    $password : Remplacez cytech0001 par le mot de passe de votre utilisateur MySQL.
+
+    $dbname : Remplacez mon_site par le nom de votre base de données MySQL.
+
+Voici un exemple de configuration à adapter à vos paramètres personnels :
+
+$servername = "localhost";
+$username = "root"; // Remplacez par votre nom d'utilisateur MySQL
+$password = "cytech0001"; // Remplacez par votre mot de passe MySQL
+$dbname = "mon_site"; // Remplacez par le nom de votre base de données
+
+5. Découvrir les fonctionnalités de l'application
 
 Pour explorer les fonctionnalités de l'application, vous pouvez vous connecter avec l'un des deux comptes préconfigurés :
 
@@ -60,3 +79,5 @@ Pour explorer les fonctionnalités de l'application, vous pouvez vous connecter 
     Email : alice.dupont@example.com
     Mot de passe : hashed_password_1
     (accès limité pour interagir avec les appareils domotiques et consulter les données)
+
+
