@@ -1,0 +1,39 @@
+.user-guide {
+    padding: 2rem;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .user-guide h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .user-guide h3 {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    color: #444;
+  }
+  
+  .user-guide ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+  
+  .user-guide li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+  }
+  
+  .user-guide .object-example {
+    background: #f2f6fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-family: monospace;
+  }

@@ -1,0 +1,121 @@
+.search-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.search-form {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.search-inputs {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.search-input {
+  flex: 2;
+  min-width: 200px;
+  padding: 12px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.search-select {
+  flex: 1;
+  min-width: 150px;
+  padding: 12px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 40px;
+}
+
+.search-select:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.search-select option {
+  background-color: #2575fc;
+  color: white;
+}
+
+.search-button {
+  padding: 12px 30px;
+  background: white;
+  color: #2575fc;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #f8f9fa;
+}
+
+.search-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .search-form {
+    padding: 1rem;
+  }
+
+  .search-inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-input,
+  .search-select,
+  .search-button {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .search-button {
+    margin-top: 10px;
+  }
+}
