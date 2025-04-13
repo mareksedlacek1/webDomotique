@@ -15,6 +15,11 @@ Naviguez vers le répertoire backend : bash cd web/backend
 Lancez le serveur PHP avec la commande suivante : bash php -S localhost:8000 Le serveur PHP sera maintenant
 disponible sur **http://localhost:8000**.
 
+Sous Linux, pour créer la base de données, ouvrez le terminal, connectez-vous à MySQL avec
+mysql -u root -p,
+puis exécutez la commande
+source /home/cytech/web6/frontend/sql/tables.sql 
+pour créer les tables nécessaires à l'application
 
 Pour découvrir et explorer les fonctionnalités de l'application, vous pouvez vous connecter avec l'un des deux comptes préconfigurés :
 le compte admin (Email : admin@example.com, Mot de passe : admin) qui vous donne un accès complet à toutes les fonctionnalités d'administration,
